@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Tiktok View Toggler",
+  "description": "Toggle the view mode of Tiktok videos",
+  "version": "1.0",
+  "icons": {
+    "16": "src/icons/icon16.svg",
+    "48": "src/icons/icon48.svg",
+    "128": "src/icons/icon128.svg"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.tiktok.com/*"],
+      "js": ["src/content.js"]
+    }
+  ]
+}
